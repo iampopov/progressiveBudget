@@ -1,8 +1,20 @@
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
+# PWA: Online/Offline Budget Tracker
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+## Performance improvements
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+- Added and wired up the [‘compression’ npm package](https://www.npmjs.com/package/compression)
+
+- Added a manifest and a service worker file to allow offline use of the app
+
+- Compressed front-end JS files (both ‘db.js’ and ‘index.js’) and output them into a ‘dist’ folder and combined both files into one
+
+- compressed CSS and stored in ‘dist’ folder/wired up to index.html
+
+- The app is deployed to Heroku [Heroku](https://sheltered-ridge-53450.herokuapp.com/)
+
+## Description
+
+The user will is able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, the app populates the total when brought back online.
 
 Offline Functionality:
 
@@ -12,7 +24,7 @@ Offline Functionality:
 
 When brought back online:
 
-- Offline entries should be added to tracker.
+- Offline entries are added to tracker.
 
 ## User Story
 
@@ -24,7 +36,7 @@ SO THAT my account balance is accurate when I am traveling
 
 Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
 
-## Acceptance Criteria
+## Criteria
 
 GIVEN a user is on Budget App without an internet connection
 WHEN the user inputs a withdrawal or deposit
